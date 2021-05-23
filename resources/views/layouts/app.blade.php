@@ -19,8 +19,6 @@
 </div>
 @if(Auth::user() !== NULL)
     <div id="content">
-        @include('includes.leftMenu')
-
         <div class="groupRightMenu">
             @include('includes.rightMenu')
         </div>

@@ -15,7 +15,9 @@ If you use https, use this instead
 ```
 git clone https://github.com/BolotnikovMS/application_for_testing.git
 ```
-Run the command below to install dependencies 
+
+Run the command below to install dependencies
+
 ```
 npm install
 ```
@@ -24,11 +26,37 @@ npm install
 
 Duplicate `.env.example` and rename it `.env`
 
+### Key generate
 
-<p>To use it is necessary:</p>
-<ul>
-    <li>Install all dependencies</li>
-    <li>Generate the key(Php artisan key:generate) and substitute it into the ENV file</li>
-    <li>Create a database and specify the parameter for connection in the ENV file</li>
-    <li>Perform table migrations.</li>
-</ul>
+```
+php artisan key:generate
+```
+
+insert into APP_KEY =
+
+### Database And Migrations
+
+Setup your database:
+
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+```
+
+Perform table migrations:
+
+```
+php artisan migrate
+```
+
+### Starting
+
+```
+php artisan serve
+```
+
+and visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to see the application in action.
