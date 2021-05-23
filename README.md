@@ -2,7 +2,7 @@
 
 <p>This application is intended for testing.</p>
 
-## Getting Started
+## Getting started
 
 Clone the project repository by running the command
 
@@ -22,7 +22,7 @@ Run the command below to install dependencies
 npm install
 ```
 
-## Setting Up
+## Setting up
 
 Duplicate `.env.example` and rename it `.env`
 
@@ -34,7 +34,7 @@ php artisan key:generate
 
 insert into APP_KEY =
 
-### Database And Migrations
+### Database and migrations
 
 Setup your database:
 
